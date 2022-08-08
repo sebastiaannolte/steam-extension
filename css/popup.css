@@ -1,0 +1,39 @@
+body {
+  width: 200px;
+  height: 57.4px;
+  margin:0;
+  outline: none
+}
+
+a {
+  display: block;
+}
+
+#login {
+  display: none;
+}
+
+.container {
+  padding: 7px;
+}
+
+.logged-in-list {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 57.4px;
+}
+
+.logged-in-list div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #ccc;
+  width: 100%;
+  justify-content: center;
+}
+
+.logged-in-list div:first-child{
+  border-top: none;
+}

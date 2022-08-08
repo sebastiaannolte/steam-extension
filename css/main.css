@@ -1,0 +1,33 @@
+    .bar {
+        transition: all .2s ease;
+        min-width: 90px;
+        height: 30px;
+        padding: 5px 10px; 
+        display:flex;
+        cursor: pointer;
+        justify-content: space-between;
+    }
+
+    .bar-kb {
+        background: #ef4444;
+    }
+
+    .bar-controller {
+        background: #3b82f6;
+    }
+
+    .bar-big{
+        height: 35px;
+    }
+
+    .bar-block {
+        align-items: center;
+        justify-content: space-around;
+        height: 48px;
+    }
+
+    .bar-icon {
+        display:flex; 
+        align-items: center;
+        position: relative;
+    }
