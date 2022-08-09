@@ -15,7 +15,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 });
 
 async function vote(data) {
-  var rawResponse = await fetch("http://localhost:5000/vote", {
+  var rawResponse = await fetch("https://steam.w0w.eu/vote", {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -30,7 +30,7 @@ async function vote(data) {
 }
 
 async function votes(data) {
-  var rawResponse = await fetch("http://localhost:5000/votes/" + data.id, {
+  var rawResponse = await fetch("https://steam.w0w.eu/votes/" + data.id, {
     method: "get",
   });
 

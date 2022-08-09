@@ -1,6 +1,6 @@
 async function loadUser() {
   $.ajax({
-    url: "http://localhost:5000/user",
+    url: "https://steam.w0w.eu/user",
     method: "get",
   })
     .done(function (result) {
@@ -20,7 +20,7 @@ async function loadUser() {
 
 $("body").on("click", ".logout", async function () {
   await $.ajax({
-    url: "http://localhost:5000/logout",
+    url: "https://steam.w0w.eu/logout",
     type: "get",
     headers: {
       "Content-Type": "application/json",
